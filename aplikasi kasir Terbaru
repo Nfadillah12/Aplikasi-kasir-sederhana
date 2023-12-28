@@ -1,0 +1,156 @@
+#include <iostream>
+#include <stdio.h>
+#include <conio.h>
+#include <stdlib.h>
+
+using namespace std;
+int main()
+{
+    int kode,pri,jml,tot,byr,kbl;
+    char mad;
+    do
+    {
+        cout<<" Warung Gabres "<<endl;
+        cout << "============================" << endl;
+        cout<<" Selamat datang di warung gabres "<<endl;
+        cout << "______________________________" << endl;
+        cout<<" solusi disaat anda kelaparan "<<endl;
+        cout<<"______________________________"<<endl;
+        cout<<""<<endl;
+        cout<<"Menu Makanan dan minuman                 Harga"<<endl;
+        cout<< "_______________________________________________" << endl;
+        cout<< endl;
+        cout<<"1.MIE GAU.                               Rp. 4.000"<<endl;
+        cout<<"2.MIE GAUL TULANG                        Rp. 5.000"<<endl;
+        cout<<"3.BIHUN GULUNG                           Rp. 1.000"<<endl;
+        cout<<"4.OTAK-OTAK                              Rp. 1.000"<<endl;
+        cout<<"5.BASO GORENG                            Rp. 1.000"<<endl;
+        cout<<"6.SOSIS GORENG                           Rp. 1.000"<<endl;
+        cout<<"7.ANEKA ES.                              Rp. 1.000"<<endl;
+        cout<<"8.SEBLAK.                                Rp. 5.000"<<endl;
+        cout<< "________________________________________________" << endl;
+        cout<<'\n'<<"MASUKAN PILIHAN ANDA :";
+        cin>>kode;
+        switch(kode){
+
+    case 1:
+        cout<<'\n'<<"MIE GAUL"<<endl;
+        pri=4000;
+        cout<<"Masukan jumlah:";
+        cin>>jml;
+        tot=pri*jml;
+        cout<<"Total harganya yaitu: Rp."<<tot<<endl;
+        cout<<"DIBAYAR: Rp.";
+        cin>>byr;
+        kbl=byr-tot;
+        cout<<"KEMBALI: Rp."<<kbl<<endl;
+        cout<<"Masih ada Y/T:";
+        cin>>mad;
+        break;
+    case 2:
+        cout<<'\n'<<"MIE GAUL TULANG"<<endl;
+        pri=5000;
+        cout<<"Masukan jumlah:";
+        cin>>jml;
+        tot=pri*jml;
+        cout<<"Total harganya yaitu: Rp."<<tot<<endl;
+        cout<<"DIBAYAR: Rp.";
+        cin>>byr;
+        kbl=byr-tot;
+        cout<<"KEMBALI: Rp."<<kbl<<endl;
+        cout<<"Masih ada Y/T:";
+        cin>>mad;
+        break;
+    case 3:
+        cout<<'\n'<<"BIHUN GULUNG"<<endl;
+        pri=1000;
+        cout<<"Masukan jumlah:";
+        cin>>jml;
+        tot=pri*jml;
+        cout<<"Total harganya yaitu: Rp."<<tot<<endl;
+        cout<<"DIBAYAR: Rp.";
+        cin>>byr;
+        kbl=byr-tot;
+        cout<<"KEMBALI: Rp."<<kbl<<endl;
+        cout<<"Masih ada Y/T:";
+        cin>>mad;
+        break;
+    case 4:
+        cout<<'\n'<<"OTAK-OTAK"<<endl;
+        pri=1000;
+        cout<<"Masukan jumlah:";
+        cin>>jml;
+        tot=pri*jml;
+        cout<<"Total harganya yaitu: Rp."<<tot<<endl;
+        cout<<"DIBAYAR: Rp.";
+        cin>>byr;
+        kbl=byr-tot;
+        cout<<"KEMBALI: Rp."<<kbl<<endl;
+        cout<<"Masih ada Y/T:";
+        cin>>mad;
+        break;
+    case 5:
+        cout<<'\n'<<"BASO GORENG"<<endl;
+        pri=1000;
+        cout<<"Masukan jumlah:";
+        cin>>jml;
+        tot=pri*jml;
+        cout<<"Total harganya yaitu: Rp."<<tot<<endl;
+        cout<<"DIBAYAR: Rp.";
+        cin>>byr;
+        kbl=byr-tot;
+        cout<<"KEMBALI: Rp."<<kbl<<endl;
+        cout<<"Masih ada Y/T:";
+        cin>>mad;
+        break;
+    case 6:
+        cout<<'\n'<<"SOSIS GORENG"<<endl;
+        pri=2000;
+        cout<<"Masukan jumlah:";
+        cin>>jml;
+        tot=pri*jml;
+        cout<<"Total harganya yaitu: Rp."<<tot<<endl;
+        cout<<"DIBAYAR: Rp.";
+        cin>>byr;
+        kbl=byr-tot;
+        cout<<"KEMBALI: Rp."<<kbl<<endl;
+        cout<<"Masih ada Y/T:";
+        cin>>mad;
+        break;
+    case 7:
+        cout<<'\n'<<"ANEKA ES"<<endl;
+        pri=1000;
+        cout<<"Masukan jumlah:";
+        cin>>jml;
+        tot=pri*jml;
+        cout<<"Total harganya yaitu: Rp."<<tot<<endl;
+        cout<<"DIBAYAR: Rp.";
+        cin>>byr;
+        kbl=byr-tot;
+        cout<<"KEMBALI: Rp."<<kbl<<endl;
+        cout<<"Masih ada Y/T:";
+        cin>>mad;
+        break;
+     case 8:
+        cout<<'\n'<<"SEBLAK"<<endl;
+        pri=5000;
+        cout<<"Masukan jumlah:";
+        cin>>jml;
+        tot=pri*jml;
+        cout<<"Total harganya yaitu: Rp."<<tot<<endl;
+        cout<<"DIBAYAR: Rp.";
+        cin>>byr;
+        kbl=byr-tot;
+        cout<<"KEMBALI: Rp."<<kbl<<endl;
+        cout<<"Masih ada Y/T:";
+        cin>>mad;
+        break;   
+    default:
+        cout<<"Kode yang anda masukan tidak ada";
+    }
+    }
+    while(mad/='Y');
+    cout<<"Terima kasih Atas Kunjungan Anda di Pondok Makan B4mzmutt";
+    getch();
+    return 0;
+}
